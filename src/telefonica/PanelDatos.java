@@ -5,10 +5,6 @@
  */
 package telefonica;
 
-import java.awt.Color;
-import java.awt.Graphics;
-import java.awt.Graphics2D;
-
 /**
  *
  * @author JaviRubio
@@ -22,15 +18,6 @@ public class PanelDatos extends javax.swing.JPanel {
         initComponents();
     }
 
-    @Override
-    public void paint(Graphics g){
-        Graphics2D g2d=(Graphics2D) g;
-        g2d.setColor(Color.white);
-        g.fill3DRect(0, 0, getWidth(), getHeight(), true);
-        g2d.setColor(Color.black);
-        //Esto dibuja un rectangulo que se adapta al tamaño de la pantalla
-        g.draw3DRect(15, 15, super.getWidth()-35, super.getHeight()-35, true);
-    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -40,19 +27,212 @@ public class PanelDatos extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        iot0 = new javax.swing.JButton();
+        iot8 = new javax.swing.JButton();
+        iot6 = new javax.swing.JButton();
+        iot2 = new javax.swing.JButton();
+        iot4 = new javax.swing.JButton();
+        iot5 = new javax.swing.JButton();
+        iot7 = new javax.swing.JButton();
+        iot3 = new javax.swing.JButton();
+        iot1 = new javax.swing.JButton();
+
+        setBackground(new java.awt.Color(255, 255, 255));
+
+        iot0.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iot.png"))); // NOI18N
+        iot0.setMaximumSize(new java.awt.Dimension(258, 258));
+        iot0.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iot0ActionPerformed(evt);
+            }
+        });
+
+        iot8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iot.png"))); // NOI18N
+        iot8.setMaximumSize(new java.awt.Dimension(258, 258));
+        iot8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iot8ActionPerformed(evt);
+            }
+        });
+
+        iot6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iot.png"))); // NOI18N
+        iot6.setMaximumSize(new java.awt.Dimension(258, 258));
+        iot6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iot6ActionPerformed(evt);
+            }
+        });
+
+        iot2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iot.png"))); // NOI18N
+        iot2.setMaximumSize(new java.awt.Dimension(258, 258));
+        iot2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iot2ActionPerformed(evt);
+            }
+        });
+
+        iot4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iot.png"))); // NOI18N
+        iot4.setMaximumSize(new java.awt.Dimension(258, 258));
+        iot4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iot4ActionPerformed(evt);
+            }
+        });
+
+        iot5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iot.png"))); // NOI18N
+        iot5.setMaximumSize(new java.awt.Dimension(258, 258));
+        iot5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iot5ActionPerformed(evt);
+            }
+        });
+
+        iot7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iot.png"))); // NOI18N
+        iot7.setMaximumSize(new java.awt.Dimension(258, 258));
+        iot7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iot7ActionPerformed(evt);
+            }
+        });
+
+        iot3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iot.png"))); // NOI18N
+        iot3.setMaximumSize(new java.awt.Dimension(258, 258));
+        iot3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iot3ActionPerformed(evt);
+            }
+        });
+
+        iot1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/iot.png"))); // NOI18N
+        iot1.setMaximumSize(new java.awt.Dimension(258, 258));
+        iot1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                iot1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(iot0, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(iot6, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 250, Short.MAX_VALUE)
+                        .addComponent(iot7, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(iot4, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(225, 225, 225)
+                .addComponent(iot8, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(609, Short.MAX_VALUE)
+                    .addComponent(iot2, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(10, 10, 10)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(609, Short.MAX_VALUE)
+                    .addComponent(iot5, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(10, 10, 10)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(10, 10, 10)
+                    .addComponent(iot3, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(609, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(321, Short.MAX_VALUE)
+                    .addComponent(iot1, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(298, 298, 298)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 300, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addComponent(iot0, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(iot6, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 177, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(iot4, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(131, 131, 131)
+                        .addComponent(iot8, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(iot7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(10, 10, 10)
+                    .addComponent(iot2, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(372, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(183, 183, 183)
+                    .addComponent(iot5, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(199, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(183, 183, 183)
+                    .addComponent(iot3, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(199, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(10, 10, 10)
+                    .addComponent(iot1, javax.swing.GroupLayout.PREFERRED_SIZE, 74, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(372, Short.MAX_VALUE)))
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void iot0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iot0ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_iot0ActionPerformed
+
+    private void iot8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iot8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_iot8ActionPerformed
+
+    private void iot6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iot6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_iot6ActionPerformed
+
+    private void iot2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iot2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_iot2ActionPerformed
+
+    private void iot4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iot4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_iot4ActionPerformed
+
+    private void iot5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iot5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_iot5ActionPerformed
+
+    private void iot7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iot7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_iot7ActionPerformed
+
+    private void iot3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iot3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_iot3ActionPerformed
+
+    private void iot1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_iot1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_iot1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton iot0;
+    private javax.swing.JButton iot1;
+    private javax.swing.JButton iot2;
+    private javax.swing.JButton iot3;
+    private javax.swing.JButton iot4;
+    private javax.swing.JButton iot5;
+    private javax.swing.JButton iot6;
+    private javax.swing.JButton iot7;
+    private javax.swing.JButton iot8;
     // End of variables declaration//GEN-END:variables
 }
