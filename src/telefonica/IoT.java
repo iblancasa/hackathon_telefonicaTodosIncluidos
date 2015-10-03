@@ -20,8 +20,8 @@ import java.util.logging.Logger;
 public class IoT {
     
     private String name;
-    private Float coordinateX;
-    private Float coordinateY;
+    private float coordinateX;
+    private float coordinateY;
     private String ID;
     private HttpURLConnection connection;
     
@@ -30,7 +30,7 @@ public class IoT {
     private int dbm;
     private float humidity;
     private float luminance;
-    private Float temperature;
+    private float temperature;
 
     
     
@@ -85,13 +85,6 @@ public class IoT {
         
         cellid = attributes.get(0).asObject().get("value").asString();
         
-       // System.out.println(attributes.get(17).asObject().get("value").asString());
-        
-    /*    for(int i=0;i<attributes.size();i++){
-            System.out.println(attributes.get(i).asObject().get("name").asString());
-            System.out.println(attributes.get(i).asObject().get("value").asString());
-        }
-      */  
        
         humidity = Float.parseFloat( attributes.get(6).asObject().get("value").asString());
         
@@ -122,6 +115,14 @@ public class IoT {
     
     public float getTemperature(){
         return temperature;
+    }
+    
+    public float getCoordinateX(){
+        return coordinateX;
+    }
+    
+    public float getCoordinateY(){
+        return coordinateY;
     }
     
     
