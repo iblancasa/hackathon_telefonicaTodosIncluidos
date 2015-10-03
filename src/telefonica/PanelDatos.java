@@ -5,6 +5,10 @@
  */
 package telefonica;
 
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+
 /**
  *
  * @author JaviRubio
@@ -18,6 +22,15 @@ public class PanelDatos extends javax.swing.JPanel {
         initComponents();
     }
 
+    @Override
+    public void paint(Graphics g){
+        Graphics2D g2d=(Graphics2D) g;
+        g2d.setColor(Color.white);
+        g.fill3DRect(0, 0, getWidth(), getHeight(), true);
+        g2d.setColor(Color.black);
+        //Esto dibuja un rectangulo que se adapta al tamaño de la pantalla
+        g.draw3DRect(15, 15, super.getWidth()-35, super.getHeight()-35, true);
+    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
