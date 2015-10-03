@@ -66,6 +66,11 @@ public class IoT {
         } catch (IOException ex) {
             Logger.getLogger(IoT.class.getName()).log(Level.SEVERE, null, ex);
         }
+        
+        if(connection.getResponseCode()!=200){
+            return;
+        }
+        
          BufferedReader br = null;
         try {
             br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
