@@ -11,11 +11,15 @@ package telefonica;
  */
 public class VentanaPrincipal extends javax.swing.JFrame {
 
+    
+    public CargaDatos Datos;
     /**
      * Creates new form VentanaPrincipal
      */
     public VentanaPrincipal() {
         initComponents();
+        Datos=new CargaDatos();
+        Datos.CargarDatos();
     }
 
     /**
