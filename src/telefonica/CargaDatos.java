@@ -5,6 +5,7 @@
  */
 package telefonica;
 
+import java.io.IOException;
 import java.util.List;
 import java.util.ArrayList;
 
@@ -23,7 +24,19 @@ public class CargaDatos {
        listaDatos=new ArrayList<>();
        for(String ID:listaID){
            aux=new IoT("Dispositivo"+contador++,ID,0,0);
-           listaDatos.add(aux);
+           try{
+            aux.update();
+               listaDatos.add(aux);
+           }
+           catch(IOException e){};
+       }
+   }
+   public void ActualizarDatos(){
+       for(IoT dispositivo:listaDatos){
+           try{
+            dispositivo.update();
+           }
+           catch(IOException e){};
        }
    }
    public IoT getDispositivo(int posicion){
